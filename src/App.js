@@ -92,11 +92,10 @@ const useToolbarStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(1),
   },
-  highlight:
-      {
-          color: theme.palette.text.primary,
-          backgroundColor: theme.palette.secondary.dark,
-        },
+  highlight: {
+        color: theme.palette.text.primary,
+        backgroundColor: theme.palette.secondary.dark,
+      },
   title: {
     flex: '1 1 100%',
   },
@@ -141,8 +140,7 @@ const useStyles = makeStyles((theme) => ({
     top: 20,
     width: 1,
   },
-  highlight:
-      {
+  highlight:  {
           color: theme.palette.text.dark,
           backgroundColor: theme.palette.grey,
         },
@@ -180,7 +178,6 @@ export default function App() {
               {stableSort(data, getComparator(order, orderBy))
                 .map((row, index) => {
                   const labelId = `enhanced-table-checkbox-${index}`;
-
                   return (
                     <TableRow  hover  tabIndex={-1} key={row.id}>
                       <TableCell id={labelId} scope="row" padding="default">
